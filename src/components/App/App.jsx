@@ -1,11 +1,12 @@
 import React from "react";
+import axios from "axios";
 import { useState, useEffect } from "react";
 import Header from "../Header/Header.jsx";
 import "./App.css";
-
+console.log("App.jsx loaded?");
 function App() {
   const [groceryList, setGroceryList] = useState([]);
-
+  console.log("Is this working?");
   useEffect(() => {
     getList();
   }, []);
