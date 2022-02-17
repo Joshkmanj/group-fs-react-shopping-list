@@ -5,9 +5,14 @@ const pool = require("../modules/pool.js");
 // TODO - Add routes here...
 router.get("/", (req, res) => {
   const sqlText = `SELECT * FROM "shopping-list" ORDER BY "purchase-status", "name" ASC;`;
-  pool.query(sqlText).then((result) => {
-    console.log("Router GET TEST", result);
-  });
+  pool
+    .query(sqlText)
+    .then((result) => {
+      console.log("Router GET TEST", result);
+    })
+    .catch((error) => {
+      console.log("GET route error", error);
+    });
 });
 
 module.exports = router;
