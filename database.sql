@@ -10,3 +10,9 @@ CREATE TABLE "shopping-list" (
 "unit" VARCHAR(20),
 "purchase-status" BOOLEAN DEFAULT FALSE
 );
+
+INSERT INTO "shopping-list" (name, quantity, "unit", "purchase-status")
+VALUES ('Apples', '2', 'lbs', false),
+('oranges', '1', 'lb', true),
+('Eggs', '3.', 'cartons', false),
+('ham', '8', 'lbs', false);
