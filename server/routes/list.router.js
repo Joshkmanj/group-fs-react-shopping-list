@@ -9,6 +9,7 @@ router.get("/", (req, res) => {
     .query(sqlText)
     .then((result) => {
       console.log("Router GET TEST", result);
+      res.send(result.rows);
     })
     .catch((error) => {
       console.log("GET route error", error);
