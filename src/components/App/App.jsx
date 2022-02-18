@@ -29,6 +29,7 @@ function App() {
         axios.post('/list', {itemInfoList: {name: item, quantity: quantity, unit: unit}})
         .then(response =>{
             console.log('items added');
+            getList();
         })
         .catch(err =>{
             console.log('error', err);

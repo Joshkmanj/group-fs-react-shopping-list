@@ -18,7 +18,8 @@ router.get("/", (req, res) => {
 
 
 router.post('/', (req, res) => {
-    const newItemInfo = req.body;
+    const newItemInfo = req.body.itemInfoList;
+    console.log('njhkljjdkjhsda');
     console.log(newItemInfo);
     const sqlText = `
     INSERT INTO "shopping-list" ("name", "quantity", "unit")
