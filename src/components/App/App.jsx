@@ -1,3 +1,4 @@
+import GroceryForm from '../GroceryForm/GroceryForm.jsx';
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -32,6 +33,7 @@ function App() {
       <Header />
       <main>
         <p>Under Construction...</p>
+        <GroceryForm />
       </main>
       <GroceryItem list={groceryList}  />
     </div>
