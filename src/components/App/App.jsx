@@ -7,7 +7,10 @@ import GroceryItem from "../GroceryItem/GroceryItem.jsx";
 import "./App.css";
 console.log("App.jsx loaded?");
 function App() {
+
   const [groceryList, setGroceryList] = useState([]);
+
+
   console.log("Is this working?");
   useEffect(() => {
     getList();
@@ -30,7 +33,7 @@ function App() {
       <main>
         <p>Under Construction...</p>
       </main>
-      <GroceryItem list={groceryList} />
+      <GroceryItem list={groceryList}  />
     </div>
   );
 }
