@@ -2,6 +2,8 @@ import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Header from "../Header/Header.jsx";
+import GroceryItem from "../GroceryItem/GroceryItem.jsx";
+
 import "./App.css";
 console.log("App.jsx loaded?");
 function App() {
@@ -28,6 +30,7 @@ function App() {
       <main>
         <p>Under Construction...</p>
       </main>
+      <GroceryItem list={groceryList} />
     </div>
   );
 }
