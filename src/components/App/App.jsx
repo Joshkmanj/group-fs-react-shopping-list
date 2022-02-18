@@ -8,7 +8,7 @@ import './App.css';
 function App() {
 
     const addItem = () => {
-        axios.post('/list', {})
+        axios.post('/list', {itemInfoList: itemInfoList})
     }
     
     return (
